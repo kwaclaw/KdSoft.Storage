@@ -36,5 +36,5 @@ using System.Runtime.InteropServices;
 //[assembly: AssemblyFileVersion("1.0.*")]
 
 // http://www.sturmnet.org/blog/2005/05/10/internalsvisibleto-sn
-[assembly: InternalsVisibleTo("Test, PublicKeyToken=<4327aaa486c60d1c>")]
+//[assembly: InternalsVisibleTo("Test, PublicKeyToken=<4327aaa486c60d1c>")]
 
