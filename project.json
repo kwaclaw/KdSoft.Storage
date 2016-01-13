@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0-*",
+    "description": "KdSoft.TransientStorage Class Library",
+    "authors": [ "karl@waclawek.net" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+    "frameworks": {
+        "net451": {
+            "dependencies": {
+            }
+        },
+        "dotnet5.4": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-*",
+                "System.Collections": "4.0.11-*",
+                "System.Linq": "4.0.1-*",
+                "System.Runtime": "4.0.21-*",
+                "System.Threading": "4.0.11-*",
+            }
+        }
+    },
+    "dependencies": {
+        "KdSoft.StorageBase": "2.0.0-*",
+        "System.Collections.Concurrent": "4.0.11-*",
+        "System.Threading.Timer": "4.0.1-*"
+    }
+}
