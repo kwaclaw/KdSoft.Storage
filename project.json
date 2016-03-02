@@ -6,23 +6,22 @@
     "projectUrl": "",
     "licenseUrl": "",
     "frameworks": {
-        "net451": {
+        "net452": {
             "dependencies": {
             }
         },
         "dotnet5.4": {
+            "compilationOptions": { "define": [ "COREFX" ] },
             "dependencies": {
-                "Microsoft.CSharp": "4.0.1-*",
-                "System.Collections": "4.0.11-*",
-                "System.Linq": "4.0.1-*",
-                "System.Runtime": "4.0.21-*",
-                "System.Threading": "4.0.11-*",
+                "System.Collections": "4.0.11-rc2-*",
+                "System.Linq": "4.1.0-*",
+                "System.Threading": "4.0.11-rc2-*"
             }
         }
     },
     "dependencies": {
         "KdSoft.StorageBase": "2.0.0-*",
         "System.Collections.Concurrent": "4.0.11-*",
-        "System.Threading.Timer": "4.0.1-*"
+        "System.Threading.Timer": "4.0.1-rc2-*"
     }
 }
