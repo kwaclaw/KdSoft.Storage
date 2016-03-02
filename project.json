@@ -7,14 +7,12 @@
     "licenseUrl": "",
 
     "frameworks": {
-        "net451": { },
+        "net452": { },
         "dotnet5.4": {
+            "compilationOptions": { "define": [ "COREFX" ] },
             "dependencies": {
-                "Microsoft.CSharp": "4.0.1-*",
-                "System.Collections": "4.0.11-*",
-                "System.Linq": "4.0.1-*",
-                "System.Runtime": "4.0.21-*",
-                "System.Threading": "4.0.11-*"
+                "System.Linq": "4.1.0-*",
+                "System.Threading": "4.0.11-rc2-*"
             }
         }
     }
