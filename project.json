@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0-*",
+    "version": "2.0.1-*",
     "description": "KdSoft.TransientStorage Class Library",
     "authors": [ "karl@waclawek.net" ],
     "tags": [ "" ],
@@ -14,14 +14,14 @@
             "compilationOptions": { "define": [ "COREFX" ] },
             "dependencies": {
                 "System.Collections": "4.0.11-rc2-*",
-                "System.Linq": "4.1.0-*",
+                "System.Linq": "4.1.0-rc2-*",
                 "System.Threading": "4.0.11-rc2-*"
             }
         }
     },
     "dependencies": {
-        "KdSoft.StorageBase": "2.0.0-*",
-        "System.Collections.Concurrent": "4.0.11-*",
+        "KdSoft.StorageBase": "2.0.1-*",
+        "System.Collections.Concurrent": "4.0.11-rc2-*",
         "System.Threading.Timer": "4.0.1-rc2-*"
     }
 }
