@@ -7,13 +7,16 @@
     "licenseUrl": "",
 
     "frameworks": {
-        "net452": { },
-        "dotnet5.4": {
+        "net451": { },
+        "netstandard1.3": {
             "compilationOptions": { "define": [ "COREFX" ] },
             "dependencies": {
-                "System.Linq": "4.1.0-rc2-*",
-                "System.Threading": "4.0.11-rc2-*"
-            }
+                "NETStandard.Library": "1.0.0-*"
+            },
+            "imports": [
+                "dnxcore50",
+                "portable-net451+win8"
+            ]
         }
     }
 }
