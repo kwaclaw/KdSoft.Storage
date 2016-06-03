@@ -2,7 +2,6 @@
     "version": "2.0.2-*",
     "description": "KdSoft.TransientStorage Class Library",
     "authors": [ "karl@waclawek.net" ],
-
     "frameworks": {
         "net451": { },
         "netstandard1.3": {
@@ -18,5 +17,8 @@
     },
     "dependencies": {
         "KdSoft.StorageBase": "2.0.2-*"
+    },
+    "buildOptions": {
+        "xmlDoc": true
     }
 }
