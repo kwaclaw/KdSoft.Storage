@@ -1,16 +1,14 @@
 {
     "version": "2.0.2-*",
-    "description": "KdSoft.StorageBase Class Library",
-    "authors": [ "karl@waclawek.net" ],
+
     "frameworks": {
         "net451": { },
         "netstandard1.3": {
             "buildOptions": { "define": [ "COREFX" ] },
             "dependencies": {
-                "NETStandard.Library": "1.5.0-*"
+                "NETStandard.Library": "1.6.0-*"
             },
             "imports": [
-                "dnxcore50",
                 "portable-net451+win8"
             ]
         }
