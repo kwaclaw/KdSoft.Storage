@@ -1,12 +1,14 @@
 {
     "version": "2.0.3",
+    "description": "KdSoft.TransientStorage Class Library",
+    "authors": [ "Karl Waclawek" ],
 
     "frameworks": {
-        "net451": { },
+        "net451": {},
         "netstandard1.3": {
             "buildOptions": { "define": [ "COREFX" ] },
             "dependencies": {
-                "NETStandard.Library": "1.6.1-*"
+                "NETStandard.Library": "1.6.1"
             },
             "imports": [
                 "portable-net451+win8"
@@ -17,6 +19,9 @@
         "KdSoft.StorageBase": "2.0.3"
     },
     "buildOptions": {
+        "compile": {
+            "includeFiles": [ "../SharedAssemblyInfo.cs" ]
+        },
         "xmlDoc": true
     }
 }
