@@ -4,7 +4,7 @@
     <Description>KdSoft.StorageBase Class Library</Description>
     <VersionPrefix>2.0.3</VersionPrefix>
     <Authors>Karl Waclawek</Authors>
-    <TargetFrameworks>net451;netstandard1.3</TargetFrameworks>
+    <TargetFramework>netstandard1.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>KdSoft.StorageBase</AssemblyName>
     <PackageId>KdSoft.StorageBase</PackageId>
@@ -19,9 +19,5 @@
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs" />
   </ItemGroup>
-
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
-    <DefineConstants>$(DefineConstants);COREFX</DefineConstants>
-  </PropertyGroup>
 
 </Project>
