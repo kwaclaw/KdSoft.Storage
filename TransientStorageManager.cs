@@ -30,7 +30,7 @@ namespace KdSoft.Services.StorageServices.Transient
                 memoryLow = !ProcessCheckTimer();
                 if (memoryLow) {
                     GC.Collect();
-#if NET451
+#if NET45
                     memoryLow = !CheckMemory();
 #endif
                 }
@@ -40,7 +40,7 @@ namespace KdSoft.Services.StorageServices.Transient
             }
         }
 
-#if NET451
+#if NET45
         bool CheckMemory() {
             bool result = true;
             try {
@@ -64,7 +64,7 @@ namespace KdSoft.Services.StorageServices.Transient
 
         bool ProcessCheckTimer() {
             ProcessCheckEvent();
-#if NET451
+#if NET45
             // check memory (once in a while) and trim the wait queue
             TimeSpan elapsed = new TimeSpan(0, 0, 0, 0, (int)(Environment.TickCount - lastMemoryCheck));
             if (elapsed > MemoryCheckPeriod) {  // consider possible overflow condition
