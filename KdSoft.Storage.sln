@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A98113A-0A62-4035-B2BA-AC20C4BB05EF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		CollectPackages.cmd = CollectPackages.cmd
+		KdSoft.Utils.Dnx\global.json = KdSoft.Utils.Dnx\global.json
+		MyFeed_push_all.cmd = MyFeed_push_all.cmd
+		NuGet.Config = NuGet.Config
+		Projects_Clear.cmd = Projects_Clear.cmd
+		QLineFeed_push_all.cmd = QLineFeed_push_all.cmd
+		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
+		Solution.ruleset = Solution.ruleset
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KdSoft.StorageBase", "KdSoft.StorageBase\KdSoft.StorageBase.csproj", "{52293615-FB29-44F3-BA89-1E6581C156ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KdSoft.TransientStorage", "KdSoft.TransientStorage\KdSoft.TransientStorage.csproj", "{0351CD33-6CC2-4D75-9FB6-807865BA291A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52293615-FB29-44F3-BA89-1E6581C156ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52293615-FB29-44F3-BA89-1E6581C156ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52293615-FB29-44F3-BA89-1E6581C156ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52293615-FB29-44F3-BA89-1E6581C156ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

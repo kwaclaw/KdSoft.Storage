@@ -6,8 +6,6 @@
     <Authors>Karl Waclawek</Authors>
     <TargetFramework>netstandard1.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>KdSoft.StorageBase</AssemblyName>
-    <PackageId>KdSoft.StorageBase</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>

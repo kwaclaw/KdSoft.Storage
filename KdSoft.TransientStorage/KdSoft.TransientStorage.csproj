@@ -6,8 +6,6 @@
     <Authors>Karl Waclawek</Authors>
     <TargetFrameworks>net45;netstandard1.2</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>KdSoft.TransientStorage</AssemblyName>
-    <PackageId>KdSoft.TransientStorage</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
