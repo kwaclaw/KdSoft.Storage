@@ -1,14 +1,19 @@
 ﻿
 namespace KdSoft.Services.StorageServices
 {
-    public struct PropDesc
-    {
-        public readonly string Name;
-        public readonly string TypeId;
+  /// <summary>
+  /// Describes stored property.
+  /// </summary>
+  public struct PropDesc
+  {
+    /// <summary></summary>
+    public readonly string Name;
+    /// <summary></summary>
+    public readonly string TypeId;
 
-        public PropDesc(string name, string typeId) {
-            Name = name;
-            TypeId = typeId;
-        }
+    public PropDesc(string name, string typeId) {
+      Name = name;
+      TypeId = typeId;
     }
+  }
 }
