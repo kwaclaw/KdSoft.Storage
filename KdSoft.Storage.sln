@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KdSoft.StorageBase", "KdSof
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KdSoft.TransientStorage", "KdSoft.TransientStorage\KdSoft.TransientStorage.csproj", "{0351CD33-6CC2-4D75-9FB6-807865BA291A}"
 EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Documentation", "documentation\Documentation.shfbproj", "{D936185C-CCDE-42E5-9E97-49033F569FC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,9 @@ Global
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D936185C-CCDE-42E5-9E97-49033F569FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D936185C-CCDE-42E5-9E97-49033F569FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D936185C-CCDE-42E5-9E97-49033F569FC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
