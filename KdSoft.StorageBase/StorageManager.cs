@@ -29,6 +29,9 @@ namespace KdSoft.Services.StorageServices
       }
     }
 
+    /// <summary>
+    /// Closes all stores managed by the storage manager.
+    /// </summary>
     public void CloseStores() {
       lock (storeLock) {
         foreach (KeyValuePair<string, S> entry in stores)
@@ -39,6 +42,11 @@ namespace KdSoft.Services.StorageServices
 
     #region StorageAdmin and StorageProvider Related
 
+    /// <summary>
+    /// Gets the store instance identified by name.
+    /// </summary>
+    /// <param name="name">Name of store to access.</param>
+    /// <returns>Store instance.</returns>
     public S GetStore(string name) {
       S store;
       lock (storeLock) {
@@ -48,6 +56,9 @@ namespace KdSoft.Services.StorageServices
       return store;
     }
 
+    /// <summary>
+    /// Lists the names of all stores managed by the storage manager.
+    /// </summary>
     public string[] ListStores() {
       string[] result;
       lock (storeLock) {

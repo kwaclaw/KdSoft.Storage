@@ -371,6 +371,12 @@ namespace KdSoft.Services.StorageServices.Transient
     #region StoreBaseOperations_ Members
 
     // does not check property indexes (Prop.Index) for allowed range!
+    /// <summary>
+    /// Creates new empty Value entry in store.
+    /// </summary>
+    /// <param name="key">Identifier for the entry.</param>
+    /// <returns><see langword="true"/> if the entry could be created, <see langword="false"/> otherwise.</returns>
+    /// <remarks></remarks>
     public bool Create(byte[] key) {
       KeyEntry entry = new KeyEntry(key, PropDescs.Length);
       bool result = propStore.TryAdd(key, entry);
@@ -379,6 +385,11 @@ namespace KdSoft.Services.StorageServices.Transient
       return result;
     }
 
+    /// <summary>
+    /// Checks if Value entry exists for the given key.
+    /// </summary>
+    /// <param name="key">Identifier for the entry.</param>
+    /// <returns>Boolean value indicating if entry exists, and number of seconds left before entry times out (if applicable).</returns>
     public Tuple<bool, int> Exists(byte[] key) {
       int timeLeft = 0;
       bool success = Exists(key, ref timeLeft);
@@ -389,6 +400,9 @@ namespace KdSoft.Services.StorageServices.Transient
 
     #region StoreOperations_ and StoreAdminOperations_ Members
 
+    /// <summary>
+    /// Timeout for stored values. Must be at least twice the <see cref="LockTimeOut"/>.
+    /// </summary>
     public TimeSpan TimeOut {
       get { return timeOut; }
       set {
@@ -400,6 +414,9 @@ namespace KdSoft.Services.StorageServices.Transient
       }
     }
 
+    /// <summary>
+    /// Lock timeout to use. Must be less than half of <see cref="Timeout"/>.
+    /// </summary>
     public TimeSpan LockTimeOut {
       get { return lockTimeOut; }
       set {
@@ -411,12 +428,56 @@ namespace KdSoft.Services.StorageServices.Transient
       }
     }
 
+    /// <summary>
+    /// Result holder for <see cref="GetAsync(byte[], ArraySegment{PropRequest}, int, bool, TaskCreationOptions)"/> requests.
+    /// </summary>
     public class GetResult
     {
+      /// <summary />
       public ErrorCode Status { get; internal set; }
+      /// <summary />
       public ArraySegment<PropEntry> Values { get; internal set; }
     }
 
+    /// <summary>
+    ///   Returns those properties for the given key that match the requests passed.
+    /// </summary>
+    /// <param name="key">Key identifying the stored value.</param>
+    /// <param name="requests">Property access requests. If the requests sequence is empty,
+    ///   no properties are returned (empty sequence).</param>
+    /// <param name="maxWaitTime">Maximum seconds to wait for locked properties to become available.
+    ///   Triggers <see cref="ErrorCode.LockWaitTimeOut"/> on timeout. A value of 0 means: no waiting.</param>
+    /// <param name="force">Determines behaviour on lock wait timeout, or when <paramref name="maxWaitTime"/> == 0:
+    ///   If <see langword="true"/>, will lock all requested properties, even if they should block, and return successfully,
+    ///   otherwise will trigger <see cref="ErrorCode.LockWaitTimeOut"/> if not all locked properties have become available.</param>
+    /// <param name="taskOptions">Task creation options, if any.</param>
+    /// <returns>Struct holding the retrieved property entries on success, or an error code on failure.</returns>
+    /// <remarks>
+    /// <list type="bullet">
+    ///   <item><description>Obtains a lock for each requested property based on its PropRequest.Mode value.
+    ///     If this value is lmCreate then the property will be be locked for update,
+    ///     but it's Value will not be returned. This can be used when the property will be
+    ///     assigned for the first time, or when the current value is not needed.</description></item>
+    ///   <item><description>The locks will expire (time out) according to how the storage is configured.
+    ///     If a property lock has expired then it will be treated as if there is no lock.</description></item>
+    ///   <item><description>Blocking means: active read locks block read/write lock requests, and active read/write
+    ///     locks block all other lock requests.</description></item>
+    ///   <item><description>When properties are read locked, a new read lock request will cause the old read
+    ///     locks to be replaced (and thus released), and the new lock holder assumes the
+    ///     responsibility to release the (continued) read lock. However, a read lock
+    ///     cannot be acquired when a read/write lock is active, unless "force" is true.</description></item>
+    ///   <item><description>During the wait time, no property locks will be accumulated, to prevent lock
+    ///     contention and dead-locks. Locks will be checked periodically, as configured
+    ///     (e.g. every 0.5 seconds). This means it is possible that the call will time out
+    ///     even if no property was locked continuously for the whole waiting period.</description></item>
+    ///   <item><description>If a requested property is not found (i.e. the requested index is out of range),
+    ///     then it is not included in the result; so if  no requested properties are found
+    ///     at all, an empty sequence is returned.</description></item>
+    ///   <item><description>If no entry for the key exists, a new entry will be created (as if Create was called).</description></item>
+    ///   <item><description>Starts the time-out countdown for the locks.</description></item>
+    ///   <item><description>Restarts the time-out countdown for the entry.</description></item>
+    /// </list>
+    /// </remarks>
     public Task<GetResult> GetAsync(
       byte[] key,
       ArraySegment<PropRequest> requests,
@@ -431,6 +492,37 @@ namespace KdSoft.Services.StorageServices.Transient
       return tcs.Task;
     }
 
+    /// <summary>
+    /// Stores/updates the property arguments in the entry for the given key and releases
+    /// the locks for all properties passed as argument.Other properties remain locked.
+    /// </summary>
+    /// <param name="key">Key identifying the stored value.</param>
+    /// <param name="values">Property entries to store in Value entry.</param>
+    /// <param name="taskOptions">Task creation options, if any.</param>
+    /// <returns><see cref="ErrorCode"/>indicating success or failure.</returns>
+    /// <remarks>
+    /// <list type="bullet">
+    ///   <item><description>All properties passed must have the same lock id that was previously used to lock
+    ///     the property, except when the value is an empty sequence.
+    ///     Otherwise a <see cref="ErrorCode.LockIdMismatch"/> will be returned.</description></item>
+    ///   <item><description>If the Value field of a property is a non-empty byte sequence then the stored
+    ///    property value will be updated.This requires that a read/write lock was previously obtained.
+    ///    Otherwise a <see cref="ErrorCode.InvalidLock"/> will be returned.</description></item>
+    ///   <item><description>If the Value field for a property is an empty sequence, then no update will be performed,
+    ///     but the existing lock will be cleared if it's lock id matches the argument's lock id.</description></item>
+    ///   <item><description>If the lock ids do not match then the action depends on the type of locks involved:
+    ///     If both are read-locks, then it will be assumed that the existing lock has replaced
+    ///     the argument's old lock, and no action is taken.
+    ///     In any other case a <see cref="ErrorCode.LockIdMismatch"/> will be returned, as this
+    ///     can only happen when a lock was forcibly replaced or cleared.</description></item>
+    ///   <item><description>If a property lock has expired but not been replaced by another lock, that is, the
+    ///     lock id still matches, then the update will succeed and no error will be reported.</description></item>
+    ///   <item><description>If the property is not assigned (is empty) or not locked,
+    ///     then a <see cref="ErrorCode.NotLocked"/> will be returned</description></item>
+    ///   <item><description>If no entry for the key exists, then a <see cref="ErrorCode.DoesNotExist"/> will be returned</description></item>
+    ///   <item><description>Restarts the time-out countdown for the entry.</description></item>
+    /// </list>
+    /// </remarks>
     public Task<ErrorCode> PutAsync(
       byte[] key,
       ArraySegment<PropEntry> values,
@@ -441,12 +533,32 @@ namespace KdSoft.Services.StorageServices.Transient
       return tcs.Task;
     }
 
+    /// <summary>
+    /// Result holder for <see cref="DeleteAsync(byte[], int, bool, TaskCreationOptions)"/> requests.
+    /// </summary>
     public class DeleteResult
     {
       public ErrorCode Status { get; internal set; }
       public bool Deleted { get; internal set; }
     }
 
+    /// <summary>
+    /// Removes entry for the given key.
+    /// </summary>
+    /// <param name="key">Key identifying the stored value.</param>
+    /// <param name="maxWaitTime">Maximum seconds to wait for locked properties to become available.
+    ///   Triggers <see cref="ErrorCode.LockWaitTimeOut"/> on timeout. A value of 0 means: no waiting.</param>
+    /// <param name="force">Determines behaviour on lock wait timeout, or when <paramref name="maxWaitTime"/> == 0:
+    ///   If <see langword="true"/>, will remove the entry, otherwise will trigger <see cref="ErrorCode.LockWaitTimeOut"/>.</param>
+    /// <param name="taskOptions">Task creation options, if any.</param>
+    /// <returns>Struct holding a boolean that indicates if the entry was indeed
+    ///   removed (it may not have existed), or an error code on failure.</returns>
+    /// <remarks>
+    ///   <list type="bullet">
+    ///   <item><description>A Remove request is blocked by read as well as read/write locks.</description></item>
+    ///   <item><description>When an entry is forcibly removed, some properties may still have valid locks.</description></item>
+    ///   </list>
+    /// </remarks>
     public Task<DeleteResult> DeleteAsync(
       byte[] key,
       int maxWaitTime,
@@ -460,12 +572,33 @@ namespace KdSoft.Services.StorageServices.Transient
       return tcs.Task;
     }
 
+    /// <summary>
+    /// Result holder for <see cref="RemoveAsync(byte[], int, bool, TaskCreationOptions)"/> requests.
+    /// </summary>
     public class RemoveResult
     {
       public ErrorCode Status { get; internal set; }
       public ArraySegment<PropEntry> Values { get; internal set; }
     }
 
+    /// <summary>
+    /// Removes entry for the given key, returning all properties that were stored,
+    /// or an empty sequence if no properties were found.
+    /// </summary>
+    /// <param name="key">Key identifying the stored value.</param>
+    /// <param name="maxWaitTime">Maximum seconds to wait for locked properties to become available.
+    ///   Triggers <see cref="ErrorCode.LockWaitTimeOut"/> on timeout. A value of 0 means: no waiting.</param>
+    /// <param name="force">Determines behaviour on lock wait timeout, or when <paramref name="maxWaitTime"/> == 0:
+    ///   If <see langword="true"/>, will remove the entry, otherwise will trigger <see cref="ErrorCode.LockWaitTimeOut"/>.</param>
+    /// <param name="taskOptions">Task creation options, if any.</param>
+    /// <returns>Struct holding the removed property entries on success, or an error code on failure.</returns>
+    /// <remarks>
+    ///   <list type="bullet">
+    ///   <item><description>A Remove request is blocked by read as well as read/write locks.</description></item>
+    ///   <item><description>If no entry for the key exists, a <see cref="ErrorCode.DoesNotExist"/> is returned.</description></item>
+    ///   <item><description>When an entry is forcibly removed, some properties may still have valid locks.</description></item>
+    ///   </list>
+    /// </remarks>
     public Task<RemoveResult> RemoveAsync(
       byte[] key,
       int maxWaitTime,
@@ -483,10 +616,18 @@ namespace KdSoft.Services.StorageServices.Transient
 
     #region StoreAdminBaseOperations_ Members
 
+    /// <summary>
+    /// Clears store of all entries, without regard to ongoing transactions.
+    /// Use with care, best when the store is not in use.
+    /// </summary>
     public void ClearStore() {
       Clear();
     }
 
+    /// <summary>
+    /// Removes store from storage without regard to ongoing transactions.
+    /// Use with care, best when the store is not in use.
+    /// </summary>
     public void RemoveStore() {
       Remove();
     }

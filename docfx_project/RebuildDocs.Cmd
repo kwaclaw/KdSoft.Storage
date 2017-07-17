@@ -1,0 +1,1 @@
+docfx.exe metadata -f && docfx build -f

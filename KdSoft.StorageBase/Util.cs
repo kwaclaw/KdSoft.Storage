@@ -1,10 +1,15 @@
-﻿using System;
-
-namespace KdSoft.Services.StorageServices
+﻿namespace KdSoft.Services.StorageServices
 {
+  /// <summary>
+  /// Utility methods.
+  /// </summary>
   public static class Util
   {
-    // Taken from http://home.comcast.net/~bretm/hash/6.html with small modification
+    /// <summary>
+    /// Generic hash function, based on https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
+    /// </summary>
+    /// <param name="data">Byte array to hash.</param>
+    /// <returns>Hash value.</returns>
     public static uint FNVHash(byte[] data) {
       const uint p = 16777619;
       uint hash = 2166136261;

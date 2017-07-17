@@ -79,10 +79,15 @@ namespace KdSoft.Services.StorageServices.Transient
 
     #region Public API
 
+    /// <summary>Frequency of timeout checks. Period must be shorter than <see cref="MemoryCheckPeriod"/>.</summary>
     public TimeSpan TimeoutCheckPeriod { get; set; }
 
+    /// <summary>Frequency of memory checks. Period must be longer that <see cref="TimeoutCheckPeriod"/>.</summary>
     public TimeSpan MemoryCheckPeriod { get; set; }
 
+    /// <summary>
+    /// Processes lock and value timeouts across all open <see cref="TransientStore"/> instances.
+    /// </summary>
     public void ProcessCheckEvent() {
       TransientStore[] storeList;
       lock (storeLock) {
@@ -97,6 +102,9 @@ namespace KdSoft.Services.StorageServices.Transient
       }
     }
 
+    /// <summary>
+    /// Number of open <see cref="TransientStore"/> instances.
+    /// </summary>
     public int EntryCount {
       get {
         int result = 0;
@@ -113,6 +121,7 @@ namespace KdSoft.Services.StorageServices.Transient
 
     #region IDisposable Members
 
+    /// <inheritdoc/>
     public void Dispose() {
       try {
         CloseStores();

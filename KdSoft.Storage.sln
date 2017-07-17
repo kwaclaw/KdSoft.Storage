@@ -24,6 +24,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{E017A36A
 		artifacts\QLineFeed_push_all.cmd = artifacts\QLineFeed_push_all.cmd
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docfx_project", "docfx_project", "{1662E75B-F1F4-417D-A016-069D90CC4251}"
+	ProjectSection(SolutionItems) = preProject
+		docfx_project\BuildDocs.cmd = docfx_project\BuildDocs.cmd
+		docfx_project\docfx.json = docfx_project\docfx.json
+		docfx_project\RebuildDocs.Cmd = docfx_project\RebuildDocs.Cmd
+		docfx_project\RunSite.cmd = docfx_project\RunSite.cmd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,5 +52,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E017A36A-FECA-4D53-BC34-CE7D5D4C8791} = {2A98113A-0A62-4035-B2BA-AC20C4BB05EF}
+		{1662E75B-F1F4-417D-A016-069D90CC4251} = {2A98113A-0A62-4035-B2BA-AC20C4BB05EF}
 	EndGlobalSection
 EndGlobal
