@@ -11,14 +11,14 @@ namespace KdSoft.Services.StorageServices.Transient
   /// </summary>
   public class TransientStore: Store<TransientStore>
   {
-    ConcurrentDictionary<byte[], KeyEntry> propStore;
+    readonly ConcurrentDictionary<byte[], KeyEntry> propStore;
     TimeSpan timeOut;
     TimeSpan lockTimeOut;
     int lockId;
     static ArraySegment<PropEntry> emptyValues = new ArraySegment<PropEntry>(new PropEntry[0]);
 
-    ConcurrentQueue<TimeOutEntry> timeoutQueue;
-    ConcurrentQueue<Action> lockWaitQueue;
+    readonly ConcurrentQueue<TimeOutEntry> timeoutQueue;
+    readonly ConcurrentQueue<Action> lockWaitQueue;
 
     public TransientStore(
       TransientStorageManager storeMgr,
@@ -200,8 +200,10 @@ namespace KdSoft.Services.StorageServices.Transient
 
     void Put(byte[] key, ArraySegment<PropEntry> values, TaskCompletionSource<ErrorCode> tcs) {
       KeyEntry entry = GetEntry(key);
-      if (entry == null)
+      if (entry == null) {
         tcs.TrySetResult(ErrorCode.DoesNotExist);
+        return;
+      }
       RestartTimer(entry);
       lock (entry) {
         tcs.TrySetResult(entry.Set(values));
@@ -420,12 +422,11 @@ namespace KdSoft.Services.StorageServices.Transient
       ArraySegment<PropRequest> requests,
       int maxWaitTime,
       bool force,
-      object asyncState = null,
       TaskCreationOptions taskOptions = TaskCreationOptions.None
     ) {
       int timeStamp = Environment.TickCount;
       TimeSpan maxWait = maxWaitTime == 0 ? TimeSpan.Zero : new TimeSpan(0, 0, maxWaitTime);
-      var tcs = new TaskCompletionSource<GetResult>(asyncState, taskOptions);
+      var tcs = new TaskCompletionSource<GetResult>(taskOptions);
       Get(key, requests, timeStamp, maxWait, force, tcs);
       return tcs.Task;
     }
@@ -433,10 +434,9 @@ namespace KdSoft.Services.StorageServices.Transient
     public Task<ErrorCode> PutAsync(
       byte[] key,
       ArraySegment<PropEntry> values,
-      object asyncState = null,
       TaskCreationOptions taskOptions = TaskCreationOptions.None
     ) {
-      var tcs = new TaskCompletionSource<ErrorCode>(asyncState, taskOptions);
+      var tcs = new TaskCompletionSource<ErrorCode>(taskOptions);
       Put(key, values, tcs);
       return tcs.Task;
     }
@@ -451,12 +451,11 @@ namespace KdSoft.Services.StorageServices.Transient
       byte[] key,
       int maxWaitTime,
       bool force,
-      object asyncState = null,
       TaskCreationOptions taskOptions = TaskCreationOptions.None
     ) {
       int timeStamp = Environment.TickCount;
       TimeSpan maxWait = maxWaitTime == 0 ? TimeSpan.Zero : new TimeSpan(0, 0, maxWaitTime);
-      var tcs = new TaskCompletionSource<DeleteResult>(asyncState, taskOptions);
+      var tcs = new TaskCompletionSource<DeleteResult>(taskOptions);
       Delete(key, timeStamp, maxWait, force, tcs);
       return tcs.Task;
     }
@@ -471,12 +470,11 @@ namespace KdSoft.Services.StorageServices.Transient
       byte[] key,
       int maxWaitTime,
       bool force,
-      object asyncState = null,
       TaskCreationOptions taskOptions = TaskCreationOptions.None
     ) {
       int timeStamp = Environment.TickCount;
       TimeSpan maxWait = maxWaitTime == 0 ? TimeSpan.Zero : new TimeSpan(0, 0, maxWaitTime);
-      var tcs = new TaskCompletionSource<RemoveResult>(asyncState, taskOptions);
+      var tcs = new TaskCompletionSource<RemoveResult>(taskOptions);
       Remove(key, timeStamp, maxWait, force, tcs);
       return tcs.Task;
     }
