@@ -12,6 +12,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
     <CodeAnalysisRuleSet>..\Solution.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
@@ -23,8 +24,9 @@
     <ProjectReference Include="..\KdSoft.StorageBase\KdSoft.StorageBase.csproj" />
   </ItemGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.2' ">
-    <DefineConstants>$(DefineConstants);COREFX</DefineConstants>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <DefineConstants Condition=" '$(TargetFramework)' == 'netstandard1.2' ">COREFX</DefineConstants>
   </PropertyGroup>
 
 </Project>
