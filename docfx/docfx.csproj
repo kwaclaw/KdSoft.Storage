@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="docfx.console" Version="2.26.3" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <DocfxConfigFile>docfx.json</DocfxConfigFile>
+        <LogFile>docfx.log</LogFile>
+        <LogLevel>Verbose</LogLevel>
+        <PreviewPort>8093</PreviewPort>
+    </PropertyGroup>
+
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+        <Message Text="Workaround: setting VSINSTALLDIR environment variable in registry. Restart Visual Studio if building for the first time." Importance="high" />
+        <Exec Command="SETX VSINSTALLDIR &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\\&quot;" />
+    </Target>
+
+    <Target Name="PostDocBuild" AfterTargets="DocBuild" Condition=" '$(Configuration)' == 'Debug' ">
+        <Message Text="Previewing documentation." Importance="high" />
+        <PropertyGroup>
+            <PreviewCommand><![CDATA[
+                START $(BuildDocToolPath) serve _site -p $(PreviewPort) && START /B http://localhost:$(PreviewPort)
+            ]]></PreviewCommand>
+        </PropertyGroup>
+        <Exec Command="$(PreviewCommand)" />
+    </Target>
+
+</Project>

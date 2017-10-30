@@ -4,7 +4,7 @@
     <Description>KdSoft.TransientStorage Class Library</Description>
     <VersionPrefix>3.1.0</VersionPrefix>
     <Authors>Karl Waclawek</Authors>
-    <TargetFrameworks>net461;netstandard1.2</TargetFrameworks>
+    <TargetFrameworks>netstandard1.2;net461</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>

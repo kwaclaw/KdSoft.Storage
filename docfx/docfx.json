@@ -8,13 +8,12 @@
             "**/KdSoft.StorageBase.csproj"
           ],
           "exclude": [ "**/obj/**", "**/bin/**", "_site/**" ],
-          "src": "../"
+          "cwd": ".."
         }
       ],
       "dest": "api",
       "properties": {
-        /* Workaround to trick DocFX into generating metadata for projects using multiple target frameworks!  */
-        "TargetFramework": "net45"
+        "TargetFramework": "net461"
       }
     }
   ],
@@ -42,7 +41,13 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*.reg"
         ],
         "exclude": [
           "obj/**",

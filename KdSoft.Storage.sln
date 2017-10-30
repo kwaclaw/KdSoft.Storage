@@ -22,16 +22,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{E017A36A-FECA-4D53-BC34-CE7D5D4C8791}"
 	ProjectSection(SolutionItems) = preProject
 		artifacts\CollectPackages.cmd = artifacts\CollectPackages.cmd
-		artifacts\MyFeed_push_all.cmd = artifacts\MyFeed_push_all.cmd
-		artifacts\QLineFeed_push_all.cmd = artifacts\QLineFeed_push_all.cmd
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docfx_project", "docfx_project", "{1662E75B-F1F4-417D-A016-069D90CC4251}"
-	ProjectSection(SolutionItems) = preProject
-		docfx_project\BuildDocs.cmd = docfx_project\BuildDocs.cmd
-		docfx_project\docfx.json = docfx_project\docfx.json
-		docfx_project\RebuildDocs.Cmd = docfx_project\RebuildDocs.Cmd
-		docfx_project\RunSite.cmd = docfx_project\RunSite.cmd
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docfx", "docfx\docfx.csproj", "{D0D77D03-2878-4CCE-80D6-1D279942EAA1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0351CD33-6CC2-4D75-9FB6-807865BA291A} = {0351CD33-6CC2-4D75-9FB6-807865BA291A}
 	EndProjectSection
 EndProject
 Global
@@ -48,12 +43,17 @@ Global
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0351CD33-6CC2-4D75-9FB6-807865BA291A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D77D03-2878-4CCE-80D6-1D279942EAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D77D03-2878-4CCE-80D6-1D279942EAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D77D03-2878-4CCE-80D6-1D279942EAA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E017A36A-FECA-4D53-BC34-CE7D5D4C8791} = {2A98113A-0A62-4035-B2BA-AC20C4BB05EF}
-		{1662E75B-F1F4-417D-A016-069D90CC4251} = {2A98113A-0A62-4035-B2BA-AC20C4BB05EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBC88E05-7848-42D0-9E7F-AD9830F41E9D}
 	EndGlobalSection
 EndGlobal

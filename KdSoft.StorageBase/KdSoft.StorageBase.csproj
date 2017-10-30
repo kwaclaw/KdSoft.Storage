@@ -4,7 +4,7 @@
     <Description>KdSoft.StorageBase Class Library</Description>
     <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>Karl Waclawek</Authors>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFrameworks>netstandard1.1;net461</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
