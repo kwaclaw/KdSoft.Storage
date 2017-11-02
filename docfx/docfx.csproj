@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net461</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,8 +16,15 @@
     </PropertyGroup>
 
     <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-        <Message Text="Workaround: setting VSINSTALLDIR environment variable in registry. Restart Visual Studio if building for the first time." Importance="high" />
-        <Exec Command="SETX VSINSTALLDIR &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\\&quot;" />
+        <Message Text="Workaround for DocFx issue #1752 : setting VSINSTALLDIR environment variable in registry." Importance="high" />
+        <Message Text="--&gt; Restart Visual Studio if building for the first time." Importance="high" />
+        <PropertyGroup>
+            <VisualInstallDir>$([System.IO.Path]::GetFullPath("$(VSAPPIDDIR)..\.."))</VisualInstallDir>
+            <PreBuildCommand><![CDATA[
+                SETX VSINSTALLDIR "$(VisualInstallDir)\\"
+            ]]></PreBuildCommand>
+        </PropertyGroup>
+        <Exec Command="$(PreBuildCommand)" />
     </Target>
 
     <Target Name="PostDocBuild" AfterTargets="DocBuild" Condition=" '$(Configuration)' == 'Debug' ">
