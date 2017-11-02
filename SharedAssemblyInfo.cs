@@ -4,10 +4,6 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("KD Soft")]
-[assembly: AssemblyProduct("KD Soft Libraries")]
-[assembly: AssemblyCopyright("Copyright © Karl Waclawek 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

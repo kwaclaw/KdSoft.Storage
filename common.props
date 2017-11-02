@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup>
+    <Copyright>Copyright © Karl Waclawek 2014</Copyright>
+    <PackageLicenseUrl>https://github.com/kwaclaw/KdSoft.Storage/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/kwaclaw/KdSoft.Storage</PackageProjectUrl>
+
+    <Authors>Karl Waclawek</Authors>
+    <Product>KD Soft Libraries</Product>
+    <Company>KD Soft</Company>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <CodeAnalysisRuleSet>$(SolutionDir)Solution.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  
+</Project>
