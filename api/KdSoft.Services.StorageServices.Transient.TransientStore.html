@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TransientStore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TransientStore
+   ">
+    <meta name="generator" content="docfx 2.26.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore">
+  
+  
+  <h1 id="KdSoft_Services_StorageServices_Transient_TransientStore" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore" class="text-break">Class TransientStore
+  </h1>
+  <div class="markdown level0 summary"><p>Implements transient (non-persistent) storage functions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="KdSoft.Services.StorageServices.Store-1.html">Store</a>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStore.html">TransientStore</a>&gt;</div>
+    <div class="level2"><span class="xref">TransientStore</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_StoreMgr">Store&lt;TransientStore&gt;.StoreMgr</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_IsClosed">Store&lt;TransientStore&gt;.IsClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_SyncRoot">Store&lt;TransientStore&gt;.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Name">Store&lt;TransientStore&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_PropDescs">Store&lt;TransientStore&gt;.PropDescs</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_GetHashCode">Store&lt;TransientStore&gt;.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Equals_System_Object_">Store&lt;TransientStore&gt;.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Remove">Store&lt;TransientStore&gt;.Remove()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="KdSoft.Services.StorageServices.Transient.html">KdSoft.Services.StorageServices.Transient</a></h6>
+  <h6><strong>Assembly</strong>: KdSoft.TransientStorage.dll</h6>
+  <h5 id="KdSoft_Services_StorageServices_Transient_TransientStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TransientStore : Store&lt;TransientStore&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore__ctor_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.#ctor*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore__ctor_KdSoft_Services_StorageServices_Transient_TransientStorageManager_System_String_KdSoft_Services_StorageServices_PropDesc___System_Int32_System_Int32_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.#ctor(KdSoft.Services.StorageServices.Transient.TransientStorageManager,System.String,KdSoft.Services.StorageServices.PropDesc[],System.Int32,System.Int32)">TransientStore(TransientStorageManager, String, PropDesc[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransientStore(TransientStorageManager storeMgr, string name, PropDesc[] propDescs, int timeOut, int lockTimeOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStorageManager.html">TransientStorageManager</a></td>
+        <td><span class="parametername">storeMgr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="KdSoft.Services.StorageServices.PropDesc.html">PropDesc</a>[]</td>
+        <td><span class="parametername">propDescs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lockTimeOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_LockTimeOut_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_LockTimeOut" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut">LockTimeOut</h4>
+  <div class="markdown level1 summary"><p>Lock timeout to use. Must be less than half of <span class="xref">System.Threading.Timeout</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan LockTimeOut { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_TimeOut_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_TimeOut" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut">TimeOut</h4>
+  <div class="markdown level1 summary"><p>Timeout for stored values. Must be at least twice the <a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_LockTimeOut">LockTimeOut</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan TimeOut { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_ClearStore_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_ClearStore" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore">ClearStore()</h4>
+  <div class="markdown level1 summary"><p>Clears store of all entries, without regard to ongoing transactions.
+Use with care, best when the store is not in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearStore()</code></pre>
+  </div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_Close_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Close*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_Close" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Close">Close()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Close()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">KdSoft.Services.StorageServices.Store&lt;KdSoft.Services.StorageServices.Transient.TransientStore&gt;.Close()</span></div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_Create_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Create*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_Create_System_Byte___" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Create(System.Byte[])">Create(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Creates new empty Value entry in store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Create(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Identifier for the entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the entry could be created, <span class="xref">false</span> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_DeleteAsync_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_DeleteAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)">DeleteAsync(Byte[], Int32, Boolean, TaskCreationOptions)</h4>
+  <div class="markdown level1 summary"><p>Removes entry for the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TransientStore.DeleteResult&gt; DeleteAsync(byte[] key, int maxWaitTime, bool force, TaskCreationOptions taskOptions = TaskCreationOptions.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key identifying the stored value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWaitTime</span></td>
+        <td><p>Maximum seconds to wait for locked properties to become available.
+  Triggers <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a> on timeout. A value of 0 means: no waiting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Determines behaviour on lock wait timeout, or when <code data-dev-comment-type="paramref" class="paramref">maxWaitTime</code> == 0:
+  If <span class="xref">true</span>, will remove the entry, otherwise will trigger <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+        <td><span class="parametername">taskOptions</span></td>
+        <td><p>Task creation options, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html">TransientStore.DeleteResult</a>&gt;</td>
+        <td><p>Struct holding a boolean that indicates if the entry was indeed
+  removed (it may not have existed), or an error code on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KdSoft_Services_StorageServices_Transient_TransientStore_DeleteAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul><li>A Remove request is blocked by read as well as read/write locks.</li><li>When an entry is forcibly removed, some properties may still have valid locks.</li></ul>
+</div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_Exists_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Exists*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_Exists_System_Byte___" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.Exists(System.Byte[])">Exists(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Checks if Value entry exists for the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tuple&lt;bool, int&gt; Exists(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Identifier for the entry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Tuple</span>&lt;<span class="xref">System.Boolean</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Boolean value indicating if entry exists, and number of seconds left before entry times out (if applicable).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_GetAsync_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_GetAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropRequest__System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropRequest},System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)">GetAsync(Byte[], ArraySegment&lt;PropRequest&gt;, Int32, Boolean, TaskCreationOptions)</h4>
+  <div class="markdown level1 summary"><p>Returns those properties for the given key that match the requests passed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TransientStore.GetResult&gt; GetAsync(byte[] key, ArraySegment&lt;PropRequest&gt; requests, int maxWaitTime, bool force, TaskCreationOptions taskOptions = TaskCreationOptions.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key identifying the stored value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArraySegment</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.PropRequest.html">PropRequest</a>&gt;</td>
+        <td><span class="parametername">requests</span></td>
+        <td><p>Property access requests. If the requests sequence is empty,
+  no properties are returned (empty sequence).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWaitTime</span></td>
+        <td><p>Maximum seconds to wait for locked properties to become available.
+  Triggers <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a> on timeout. A value of 0 means: no waiting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Determines behaviour on lock wait timeout, or when <code data-dev-comment-type="paramref" class="paramref">maxWaitTime</code> == 0:
+  If <span class="xref">true</span>, will lock all requested properties, even if they should block, and return successfully,
+  otherwise will trigger <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a> if not all locked properties have become available.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+        <td><span class="parametername">taskOptions</span></td>
+        <td><p>Task creation options, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html">TransientStore.GetResult</a>&gt;</td>
+        <td><p>Struct holding the retrieved property entries on success, or an error code on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KdSoft_Services_StorageServices_Transient_TransientStore_GetAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropRequest__System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul><li>Obtains a lock for each requested property based on its PropRequest.Mode value.
+    If this value is lmCreate then the property will be be locked for update,
+    but it&apos;s Value will not be returned. This can be used when the property will be
+    assigned for the first time, or when the current value is not needed.</li><li>The locks will expire (time out) according to how the storage is configured.
+    If a property lock has expired then it will be treated as if there is no lock.</li><li>Blocking means: active read locks block read/write lock requests, and active read/write
+    locks block all other lock requests.</li><li>When properties are read locked, a new read lock request will cause the old read
+    locks to be replaced (and thus released), and the new lock holder assumes the
+    responsibility to release the (continued) read lock. However, a read lock
+    cannot be acquired when a read/write lock is active, unless &quot;force&quot; is true.</li><li>During the wait time, no property locks will be accumulated, to prevent lock
+    contention and dead-locks. Locks will be checked periodically, as configured
+    (e.g. every 0.5 seconds). This means it is possible that the call will time out
+    even if no property was locked continuously for the whole waiting period.</li><li>If a requested property is not found (i.e. the requested index is out of range),
+    then it is not included in the result; so if  no requested properties are found
+    at all, an empty sequence is returned.</li><li>If no entry for the key exists, a new entry will be created (as if Create was called).</li><li>Starts the time-out countdown for the locks.</li><li>Restarts the time-out countdown for the entry.</li></ul>
+</div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_PutAsync_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_PutAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropEntry__System_Threading_Tasks_TaskCreationOptions_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropEntry},System.Threading.Tasks.TaskCreationOptions)">PutAsync(Byte[], ArraySegment&lt;PropEntry&gt;, TaskCreationOptions)</h4>
+  <div class="markdown level1 summary"><p>Stores/updates the property arguments in the entry for the given key and releases
+the locks for all properties passed as argument.Other properties remain locked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ErrorCode&gt; PutAsync(byte[] key, ArraySegment&lt;PropEntry&gt; values, TaskCreationOptions taskOptions = TaskCreationOptions.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key identifying the stored value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArraySegment</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.PropEntry.html">PropEntry</a>&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>Property entries to store in Value entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+        <td><span class="parametername">taskOptions</span></td>
+        <td><p>Task creation options, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html">ErrorCode</a>&gt;</td>
+        <td><p><a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html">ErrorCode</a>indicating success or failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KdSoft_Services_StorageServices_Transient_TransientStore_PutAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropEntry__System_Threading_Tasks_TaskCreationOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul><li>All properties passed must have the same lock id that was previously used to lock
+    the property, except when the value is an empty sequence.
+    Otherwise a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockIdMismatch">LockIdMismatch</a> will be returned.</li><li>If the Value field of a property is a non-empty byte sequence then the stored
+   property value will be updated.This requires that a read/write lock was previously obtained.
+   Otherwise a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_InvalidLock">InvalidLock</a> will be returned.</li><li>If the Value field for a property is an empty sequence, then no update will be performed,
+    but the existing lock will be cleared if it&apos;s lock id matches the argument&apos;s lock id.</li><li>If the lock ids do not match then the action depends on the type of locks involved:
+    If both are read-locks, then it will be assumed that the existing lock has replaced
+    the argument&apos;s old lock, and no action is taken.
+    In any other case a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockIdMismatch">LockIdMismatch</a> will be returned, as this
+    can only happen when a lock was forcibly replaced or cleared.</li><li>If a property lock has expired but not been replaced by another lock, that is, the
+    lock id still matches, then the update will succeed and no error will be reported.</li><li>If the property is not assigned (is empty) or not locked,
+    then a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_NotLocked">NotLocked</a> will be returned</li><li>If no entry for the key exists, then a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_DoesNotExist">DoesNotExist</a> will be returned</li><li>Restarts the time-out countdown for the entry.</li></ul>
+</div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_RemoveAsync_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_RemoveAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)">RemoveAsync(Byte[], Int32, Boolean, TaskCreationOptions)</h4>
+  <div class="markdown level1 summary"><p>Removes entry for the given key, returning all properties that were stored,
+or an empty sequence if no properties were found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TransientStore.RemoveResult&gt; RemoveAsync(byte[] key, int maxWaitTime, bool force, TaskCreationOptions taskOptions = TaskCreationOptions.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key identifying the stored value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWaitTime</span></td>
+        <td><p>Maximum seconds to wait for locked properties to become available.
+  Triggers <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a> on timeout. A value of 0 means: no waiting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td><p>Determines behaviour on lock wait timeout, or when <code data-dev-comment-type="paramref" class="paramref">maxWaitTime</code> == 0:
+  If <span class="xref">true</span>, will remove the entry, otherwise will trigger <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut">LockWaitTimeOut</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCreationOptions</span></td>
+        <td><span class="parametername">taskOptions</span></td>
+        <td><p>Task creation options, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html">TransientStore.RemoveResult</a>&gt;</td>
+        <td><p>Struct holding the removed property entries on success, or an error code on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="KdSoft_Services_StorageServices_Transient_TransientStore_RemoveAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul><li>A Remove request is blocked by read as well as read/write locks.</li><li>If no entry for the key exists, a <a class="xref" href="KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_DoesNotExist">DoesNotExist</a> is returned.</li><li>When an entry is forcibly removed, some properties may still have valid locks.</li></ul>
+</div>
+  
+  
+  <a id="KdSoft_Services_StorageServices_Transient_TransientStore_RemoveStore_" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore*"></a>
+  <h4 id="KdSoft_Services_StorageServices_Transient_TransientStore_RemoveStore" data-uid="KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore">RemoveStore()</h4>
+  <div class="markdown level1 summary"><p>Removes store from storage without regard to ongoing transactions.
+Use with care, best when the store is not in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveStore()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,811 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: KdSoft.Services.StorageServices
+  name: KdSoft.Services.StorageServices
+  href: api/KdSoft.Services.StorageServices.html
+  commentId: N:KdSoft.Services.StorageServices
+  fullName: KdSoft.Services.StorageServices
+  nameWithType: KdSoft.Services.StorageServices
+- uid: KdSoft.Services.StorageServices.PropDesc
+  name: PropDesc
+  href: api/KdSoft.Services.StorageServices.PropDesc.html
+  commentId: T:KdSoft.Services.StorageServices.PropDesc
+  fullName: KdSoft.Services.StorageServices.PropDesc
+  nameWithType: PropDesc
+- uid: KdSoft.Services.StorageServices.PropDesc.#ctor(System.String,System.String)
+  name: PropDesc(String, String)
+  href: api/KdSoft.Services.StorageServices.PropDesc.html#KdSoft_Services_StorageServices_PropDesc__ctor_System_String_System_String_
+  commentId: M:KdSoft.Services.StorageServices.PropDesc.#ctor(System.String,System.String)
+  fullName: KdSoft.Services.StorageServices.PropDesc.PropDesc(System.String, System.String)
+  nameWithType: PropDesc.PropDesc(String, String)
+- uid: KdSoft.Services.StorageServices.PropDesc.#ctor*
+  name: PropDesc
+  href: api/KdSoft.Services.StorageServices.PropDesc.html#KdSoft_Services_StorageServices_PropDesc__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.PropDesc.#ctor
+  fullName: KdSoft.Services.StorageServices.PropDesc.PropDesc
+  nameWithType: PropDesc.PropDesc
+- uid: KdSoft.Services.StorageServices.PropDesc.Name
+  name: Name
+  href: api/KdSoft.Services.StorageServices.PropDesc.html#KdSoft_Services_StorageServices_PropDesc_Name
+  commentId: F:KdSoft.Services.StorageServices.PropDesc.Name
+  fullName: KdSoft.Services.StorageServices.PropDesc.Name
+  nameWithType: PropDesc.Name
+- uid: KdSoft.Services.StorageServices.PropDesc.TypeId
+  name: TypeId
+  href: api/KdSoft.Services.StorageServices.PropDesc.html#KdSoft_Services_StorageServices_PropDesc_TypeId
+  commentId: F:KdSoft.Services.StorageServices.PropDesc.TypeId
+  fullName: KdSoft.Services.StorageServices.PropDesc.TypeId
+  nameWithType: PropDesc.TypeId
+- uid: KdSoft.Services.StorageServices.StorageManager`1
+  name: StorageManager<S>
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html
+  commentId: T:KdSoft.Services.StorageServices.StorageManager`1
+  name.vb: StorageManager(Of S)
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S)
+  nameWithType: StorageManager<S>
+  nameWithType.vb: StorageManager(Of S)
+- uid: KdSoft.Services.StorageServices.StorageManager`1.#ctor
+  name: StorageManager()
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1__ctor
+  commentId: M:KdSoft.Services.StorageServices.StorageManager`1.#ctor
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.StorageManager()
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).StorageManager()
+  nameWithType: StorageManager<S>.StorageManager()
+  nameWithType.vb: StorageManager(Of S).StorageManager()
+- uid: KdSoft.Services.StorageServices.StorageManager`1.#ctor*
+  name: StorageManager
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.StorageManager`1.#ctor
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.StorageManager
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).StorageManager
+  nameWithType: StorageManager<S>.StorageManager
+  nameWithType.vb: StorageManager(Of S).StorageManager
+- uid: KdSoft.Services.StorageServices.StorageManager`1.CloseStores
+  name: CloseStores()
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_CloseStores
+  commentId: M:KdSoft.Services.StorageServices.StorageManager`1.CloseStores
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.CloseStores()
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).CloseStores()
+  nameWithType: StorageManager<S>.CloseStores()
+  nameWithType.vb: StorageManager(Of S).CloseStores()
+- uid: KdSoft.Services.StorageServices.StorageManager`1.CloseStores*
+  name: CloseStores
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_CloseStores_
+  commentId: Overload:KdSoft.Services.StorageServices.StorageManager`1.CloseStores
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.CloseStores
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).CloseStores
+  nameWithType: StorageManager<S>.CloseStores
+  nameWithType.vb: StorageManager(Of S).CloseStores
+- uid: KdSoft.Services.StorageServices.StorageManager`1.GetStore(System.String)
+  name: GetStore(String)
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_GetStore_System_String_
+  commentId: M:KdSoft.Services.StorageServices.StorageManager`1.GetStore(System.String)
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.GetStore(System.String)
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).GetStore(System.String)
+  nameWithType: StorageManager<S>.GetStore(String)
+  nameWithType.vb: StorageManager(Of S).GetStore(String)
+- uid: KdSoft.Services.StorageServices.StorageManager`1.GetStore*
+  name: GetStore
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_GetStore_
+  commentId: Overload:KdSoft.Services.StorageServices.StorageManager`1.GetStore
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.GetStore
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).GetStore
+  nameWithType: StorageManager<S>.GetStore
+  nameWithType.vb: StorageManager(Of S).GetStore
+- uid: KdSoft.Services.StorageServices.StorageManager`1.ListStores
+  name: ListStores()
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_ListStores
+  commentId: M:KdSoft.Services.StorageServices.StorageManager`1.ListStores
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.ListStores()
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).ListStores()
+  nameWithType: StorageManager<S>.ListStores()
+  nameWithType.vb: StorageManager(Of S).ListStores()
+- uid: KdSoft.Services.StorageServices.StorageManager`1.ListStores*
+  name: ListStores
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_ListStores_
+  commentId: Overload:KdSoft.Services.StorageServices.StorageManager`1.ListStores
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.ListStores
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).ListStores
+  nameWithType: StorageManager<S>.ListStores
+  nameWithType.vb: StorageManager(Of S).ListStores
+- uid: KdSoft.Services.StorageServices.StorageManager`1.storeLock
+  name: storeLock
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_storeLock
+  commentId: F:KdSoft.Services.StorageServices.StorageManager`1.storeLock
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.storeLock
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).storeLock
+  nameWithType: StorageManager<S>.storeLock
+  nameWithType.vb: StorageManager(Of S).storeLock
+- uid: KdSoft.Services.StorageServices.StorageManager`1.stores
+  name: stores
+  href: api/KdSoft.Services.StorageServices.StorageManager-1.html#KdSoft_Services_StorageServices_StorageManager_1_stores
+  commentId: F:KdSoft.Services.StorageServices.StorageManager`1.stores
+  fullName: KdSoft.Services.StorageServices.StorageManager<S>.stores
+  fullName.vb: KdSoft.Services.StorageServices.StorageManager(Of S).stores
+  nameWithType: StorageManager<S>.stores
+  nameWithType.vb: StorageManager(Of S).stores
+- uid: KdSoft.Services.StorageServices.Store`1
+  name: Store<S>
+  href: api/KdSoft.Services.StorageServices.Store-1.html
+  commentId: T:KdSoft.Services.StorageServices.Store`1
+  name.vb: Store(Of S)
+  fullName: KdSoft.Services.StorageServices.Store<S>
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S)
+  nameWithType: Store<S>
+  nameWithType.vb: Store(Of S)
+- uid: KdSoft.Services.StorageServices.Store`1.#ctor(KdSoft.Services.StorageServices.StorageManager{`0},System.String,KdSoft.Services.StorageServices.PropDesc[])
+  name: Store(StorageManager<S>, String, PropDesc[])
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1__ctor_KdSoft_Services_StorageServices_StorageManager__0__System_String_KdSoft_Services_StorageServices_PropDesc___
+  commentId: M:KdSoft.Services.StorageServices.Store`1.#ctor(KdSoft.Services.StorageServices.StorageManager{`0},System.String,KdSoft.Services.StorageServices.PropDesc[])
+  name.vb: Store(StorageManager(Of S), String, PropDesc())
+  fullName: KdSoft.Services.StorageServices.Store<S>.Store(KdSoft.Services.StorageServices.StorageManager<S>, System.String, KdSoft.Services.StorageServices.PropDesc[])
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Store(KdSoft.Services.StorageServices.StorageManager(Of S), System.String, KdSoft.Services.StorageServices.PropDesc())
+  nameWithType: Store<S>.Store(StorageManager<S>, String, PropDesc[])
+  nameWithType.vb: Store(Of S).Store(StorageManager(Of S), String, PropDesc())
+- uid: KdSoft.Services.StorageServices.Store`1.#ctor*
+  name: Store
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.#ctor
+  fullName: KdSoft.Services.StorageServices.Store<S>.Store
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Store
+  nameWithType: Store<S>.Store
+  nameWithType.vb: Store(Of S).Store
+- uid: KdSoft.Services.StorageServices.Store`1.Close
+  name: Close()
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Close
+  commentId: M:KdSoft.Services.StorageServices.Store`1.Close
+  fullName: KdSoft.Services.StorageServices.Store<S>.Close()
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Close()
+  nameWithType: Store<S>.Close()
+  nameWithType.vb: Store(Of S).Close()
+- uid: KdSoft.Services.StorageServices.Store`1.Close*
+  name: Close
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Close_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.Close
+  fullName: KdSoft.Services.StorageServices.Store<S>.Close
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Close
+  nameWithType: Store<S>.Close
+  nameWithType.vb: Store(Of S).Close
+- uid: KdSoft.Services.StorageServices.Store`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Equals_System_Object_
+  commentId: M:KdSoft.Services.StorageServices.Store`1.Equals(System.Object)
+  fullName: KdSoft.Services.StorageServices.Store<S>.Equals(System.Object)
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Equals(System.Object)
+  nameWithType: Store<S>.Equals(Object)
+  nameWithType.vb: Store(Of S).Equals(Object)
+- uid: KdSoft.Services.StorageServices.Store`1.Equals*
+  name: Equals
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Equals_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.Equals
+  fullName: KdSoft.Services.StorageServices.Store<S>.Equals
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Equals
+  nameWithType: Store<S>.Equals
+  nameWithType.vb: Store(Of S).Equals
+- uid: KdSoft.Services.StorageServices.Store`1.GetHashCode
+  name: GetHashCode()
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_GetHashCode
+  commentId: M:KdSoft.Services.StorageServices.Store`1.GetHashCode
+  fullName: KdSoft.Services.StorageServices.Store<S>.GetHashCode()
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).GetHashCode()
+  nameWithType: Store<S>.GetHashCode()
+  nameWithType.vb: Store(Of S).GetHashCode()
+- uid: KdSoft.Services.StorageServices.Store`1.GetHashCode*
+  name: GetHashCode
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_GetHashCode_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.GetHashCode
+  fullName: KdSoft.Services.StorageServices.Store<S>.GetHashCode
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).GetHashCode
+  nameWithType: Store<S>.GetHashCode
+  nameWithType.vb: Store(Of S).GetHashCode
+- uid: KdSoft.Services.StorageServices.Store`1.IsClosed
+  name: IsClosed
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_IsClosed
+  commentId: P:KdSoft.Services.StorageServices.Store`1.IsClosed
+  fullName: KdSoft.Services.StorageServices.Store<S>.IsClosed
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).IsClosed
+  nameWithType: Store<S>.IsClosed
+  nameWithType.vb: Store(Of S).IsClosed
+- uid: KdSoft.Services.StorageServices.Store`1.IsClosed*
+  name: IsClosed
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_IsClosed_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.IsClosed
+  fullName: KdSoft.Services.StorageServices.Store<S>.IsClosed
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).IsClosed
+  nameWithType: Store<S>.IsClosed
+  nameWithType.vb: Store(Of S).IsClosed
+- uid: KdSoft.Services.StorageServices.Store`1.Name
+  name: Name
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Name
+  commentId: F:KdSoft.Services.StorageServices.Store`1.Name
+  fullName: KdSoft.Services.StorageServices.Store<S>.Name
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Name
+  nameWithType: Store<S>.Name
+  nameWithType.vb: Store(Of S).Name
+- uid: KdSoft.Services.StorageServices.Store`1.PropDescs
+  name: PropDescs
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_PropDescs
+  commentId: F:KdSoft.Services.StorageServices.Store`1.PropDescs
+  fullName: KdSoft.Services.StorageServices.Store<S>.PropDescs
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).PropDescs
+  nameWithType: Store<S>.PropDescs
+  nameWithType.vb: Store(Of S).PropDescs
+- uid: KdSoft.Services.StorageServices.Store`1.Remove
+  name: Remove()
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Remove
+  commentId: M:KdSoft.Services.StorageServices.Store`1.Remove
+  fullName: KdSoft.Services.StorageServices.Store<S>.Remove()
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Remove()
+  nameWithType: Store<S>.Remove()
+  nameWithType.vb: Store(Of S).Remove()
+- uid: KdSoft.Services.StorageServices.Store`1.Remove*
+  name: Remove
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_Remove_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.Remove
+  fullName: KdSoft.Services.StorageServices.Store<S>.Remove
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).Remove
+  nameWithType: Store<S>.Remove
+  nameWithType.vb: Store(Of S).Remove
+- uid: KdSoft.Services.StorageServices.Store`1.StoreMgr
+  name: StoreMgr
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_StoreMgr
+  commentId: P:KdSoft.Services.StorageServices.Store`1.StoreMgr
+  fullName: KdSoft.Services.StorageServices.Store<S>.StoreMgr
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).StoreMgr
+  nameWithType: Store<S>.StoreMgr
+  nameWithType.vb: Store(Of S).StoreMgr
+- uid: KdSoft.Services.StorageServices.Store`1.StoreMgr*
+  name: StoreMgr
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_StoreMgr_
+  commentId: Overload:KdSoft.Services.StorageServices.Store`1.StoreMgr
+  fullName: KdSoft.Services.StorageServices.Store<S>.StoreMgr
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).StoreMgr
+  nameWithType: Store<S>.StoreMgr
+  nameWithType.vb: Store(Of S).StoreMgr
+- uid: KdSoft.Services.StorageServices.Store`1.SyncRoot
+  name: SyncRoot
+  href: api/KdSoft.Services.StorageServices.Store-1.html#KdSoft_Services_StorageServices_Store_1_SyncRoot
+  commentId: F:KdSoft.Services.StorageServices.Store`1.SyncRoot
+  fullName: KdSoft.Services.StorageServices.Store<S>.SyncRoot
+  fullName.vb: KdSoft.Services.StorageServices.Store(Of S).SyncRoot
+  nameWithType: Store<S>.SyncRoot
+  nameWithType.vb: Store(Of S).SyncRoot
+- uid: KdSoft.Services.StorageServices.Transient
+  name: KdSoft.Services.StorageServices.Transient
+  href: api/KdSoft.Services.StorageServices.Transient.html
+  commentId: N:KdSoft.Services.StorageServices.Transient
+  fullName: KdSoft.Services.StorageServices.Transient
+  nameWithType: KdSoft.Services.StorageServices.Transient
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode
+  name: ErrorCode
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.ErrorCode
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode
+  nameWithType: ErrorCode
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.AlreadyExists
+  name: AlreadyExists
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_AlreadyExists
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.AlreadyExists
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.AlreadyExists
+  nameWithType: ErrorCode.AlreadyExists
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.CapacityExceeded
+  name: CapacityExceeded
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_CapacityExceeded
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.CapacityExceeded
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.CapacityExceeded
+  nameWithType: ErrorCode.CapacityExceeded
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.DoesNotExist
+  name: DoesNotExist
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_DoesNotExist
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.DoesNotExist
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.DoesNotExist
+  nameWithType: ErrorCode.DoesNotExist
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.General
+  name: General
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_General
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.General
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.General
+  nameWithType: ErrorCode.General
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.InvalidLock
+  name: InvalidLock
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_InvalidLock
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.InvalidLock
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.InvalidLock
+  nameWithType: ErrorCode.InvalidLock
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.Locked
+  name: Locked
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_Locked
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.Locked
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.Locked
+  nameWithType: ErrorCode.Locked
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.LockIdMismatch
+  name: LockIdMismatch
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockIdMismatch
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.LockIdMismatch
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.LockIdMismatch
+  nameWithType: ErrorCode.LockIdMismatch
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.LockWaitTimeOut
+  name: LockWaitTimeOut
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_LockWaitTimeOut
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.LockWaitTimeOut
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.LockWaitTimeOut
+  nameWithType: ErrorCode.LockWaitTimeOut
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.None
+  name: None
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_None
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.None
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.None
+  nameWithType: ErrorCode.None
+- uid: KdSoft.Services.StorageServices.Transient.ErrorCode.NotLocked
+  name: NotLocked
+  href: api/KdSoft.Services.StorageServices.Transient.ErrorCode.html#KdSoft_Services_StorageServices_Transient_ErrorCode_NotLocked
+  commentId: F:KdSoft.Services.StorageServices.Transient.ErrorCode.NotLocked
+  fullName: KdSoft.Services.StorageServices.Transient.ErrorCode.NotLocked
+  nameWithType: ErrorCode.NotLocked
+- uid: KdSoft.Services.StorageServices.Transient.LockMode
+  name: LockMode
+  href: api/KdSoft.Services.StorageServices.Transient.LockMode.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.LockMode
+  fullName: KdSoft.Services.StorageServices.Transient.LockMode
+  nameWithType: LockMode
+- uid: KdSoft.Services.StorageServices.Transient.LockMode.Create
+  name: Create
+  href: api/KdSoft.Services.StorageServices.Transient.LockMode.html#KdSoft_Services_StorageServices_Transient_LockMode_Create
+  commentId: F:KdSoft.Services.StorageServices.Transient.LockMode.Create
+  fullName: KdSoft.Services.StorageServices.Transient.LockMode.Create
+  nameWithType: LockMode.Create
+- uid: KdSoft.Services.StorageServices.Transient.LockMode.None
+  name: None
+  href: api/KdSoft.Services.StorageServices.Transient.LockMode.html#KdSoft_Services_StorageServices_Transient_LockMode_None
+  commentId: F:KdSoft.Services.StorageServices.Transient.LockMode.None
+  fullName: KdSoft.Services.StorageServices.Transient.LockMode.None
+  nameWithType: LockMode.None
+- uid: KdSoft.Services.StorageServices.Transient.LockMode.Read
+  name: Read
+  href: api/KdSoft.Services.StorageServices.Transient.LockMode.html#KdSoft_Services_StorageServices_Transient_LockMode_Read
+  commentId: F:KdSoft.Services.StorageServices.Transient.LockMode.Read
+  fullName: KdSoft.Services.StorageServices.Transient.LockMode.Read
+  nameWithType: LockMode.Read
+- uid: KdSoft.Services.StorageServices.Transient.LockMode.Update
+  name: Update
+  href: api/KdSoft.Services.StorageServices.Transient.LockMode.html#KdSoft_Services_StorageServices_Transient_LockMode_Update
+  commentId: F:KdSoft.Services.StorageServices.Transient.LockMode.Update
+  fullName: KdSoft.Services.StorageServices.Transient.LockMode.Update
+  nameWithType: LockMode.Update
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry
+  name: PropEntry
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.PropEntry
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry
+  nameWithType: PropEntry
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.#ctor(System.Int32,System.Int32)
+  name: PropEntry(Int32, Int32)
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry__ctor_System_Int32_System_Int32_
+  commentId: M:KdSoft.Services.StorageServices.Transient.PropEntry.#ctor(System.Int32,System.Int32)
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.PropEntry(System.Int32, System.Int32)
+  nameWithType: PropEntry.PropEntry(Int32, Int32)
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.#ctor(System.Int32,System.Int32,System.Byte[])
+  name: PropEntry(Int32, Int32, Byte[])
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry__ctor_System_Int32_System_Int32_System_Byte___
+  commentId: M:KdSoft.Services.StorageServices.Transient.PropEntry.#ctor(System.Int32,System.Int32,System.Byte[])
+  name.vb: PropEntry(Int32, Int32, Byte())
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.PropEntry(System.Int32, System.Int32, System.Byte[])
+  fullName.vb: KdSoft.Services.StorageServices.Transient.PropEntry.PropEntry(System.Int32, System.Int32, System.Byte())
+  nameWithType: PropEntry.PropEntry(Int32, Int32, Byte[])
+  nameWithType.vb: PropEntry.PropEntry(Int32, Int32, Byte())
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.#ctor*
+  name: PropEntry
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.PropEntry.#ctor
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.PropEntry
+  nameWithType: PropEntry.PropEntry
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.Index
+  name: Index
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry_Index
+  commentId: F:KdSoft.Services.StorageServices.Transient.PropEntry.Index
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.Index
+  nameWithType: PropEntry.Index
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.LockId
+  name: LockId
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry_LockId
+  commentId: F:KdSoft.Services.StorageServices.Transient.PropEntry.LockId
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.LockId
+  nameWithType: PropEntry.LockId
+- uid: KdSoft.Services.StorageServices.Transient.PropEntry.Value
+  name: Value
+  href: api/KdSoft.Services.StorageServices.Transient.PropEntry.html#KdSoft_Services_StorageServices_Transient_PropEntry_Value
+  commentId: F:KdSoft.Services.StorageServices.Transient.PropEntry.Value
+  fullName: KdSoft.Services.StorageServices.Transient.PropEntry.Value
+  nameWithType: PropEntry.Value
+- uid: KdSoft.Services.StorageServices.Transient.PropRequest
+  name: PropRequest
+  href: api/KdSoft.Services.StorageServices.Transient.PropRequest.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.PropRequest
+  fullName: KdSoft.Services.StorageServices.Transient.PropRequest
+  nameWithType: PropRequest
+- uid: KdSoft.Services.StorageServices.Transient.PropRequest.#ctor(System.Int32,KdSoft.Services.StorageServices.Transient.LockMode)
+  name: PropRequest(Int32, LockMode)
+  href: api/KdSoft.Services.StorageServices.Transient.PropRequest.html#KdSoft_Services_StorageServices_Transient_PropRequest__ctor_System_Int32_KdSoft_Services_StorageServices_Transient_LockMode_
+  commentId: M:KdSoft.Services.StorageServices.Transient.PropRequest.#ctor(System.Int32,KdSoft.Services.StorageServices.Transient.LockMode)
+  fullName: KdSoft.Services.StorageServices.Transient.PropRequest.PropRequest(System.Int32, KdSoft.Services.StorageServices.Transient.LockMode)
+  nameWithType: PropRequest.PropRequest(Int32, LockMode)
+- uid: KdSoft.Services.StorageServices.Transient.PropRequest.#ctor*
+  name: PropRequest
+  href: api/KdSoft.Services.StorageServices.Transient.PropRequest.html#KdSoft_Services_StorageServices_Transient_PropRequest__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.PropRequest.#ctor
+  fullName: KdSoft.Services.StorageServices.Transient.PropRequest.PropRequest
+  nameWithType: PropRequest.PropRequest
+- uid: KdSoft.Services.StorageServices.Transient.PropRequest.Index
+  name: Index
+  href: api/KdSoft.Services.StorageServices.Transient.PropRequest.html#KdSoft_Services_StorageServices_Transient_PropRequest_Index
+  commentId: F:KdSoft.Services.StorageServices.Transient.PropRequest.Index
+  fullName: KdSoft.Services.StorageServices.Transient.PropRequest.Index
+  nameWithType: PropRequest.Index
+- uid: KdSoft.Services.StorageServices.Transient.PropRequest.Mode
+  name: Mode
+  href: api/KdSoft.Services.StorageServices.Transient.PropRequest.html#KdSoft_Services_StorageServices_Transient_PropRequest_Mode
+  commentId: F:KdSoft.Services.StorageServices.Transient.PropRequest.Mode
+  fullName: KdSoft.Services.StorageServices.Transient.PropRequest.Mode
+  nameWithType: PropRequest.Mode
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager
+  name: TransientStorageManager
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.TransientStorageManager
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager
+  nameWithType: TransientStorageManager
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.#ctor
+  name: TransientStorageManager()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager__ctor
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStorageManager.#ctor
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TransientStorageManager()
+  nameWithType: TransientStorageManager.TransientStorageManager()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.#ctor*
+  name: TransientStorageManager
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.#ctor
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TransientStorageManager
+  nameWithType: TransientStorageManager.TransientStorageManager
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose
+  name: Dispose()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_Dispose
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose()
+  nameWithType: TransientStorageManager.Dispose()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose*
+  name: Dispose
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_Dispose_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.Dispose
+  nameWithType: TransientStorageManager.Dispose
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount
+  name: EntryCount
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_EntryCount
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount
+  nameWithType: TransientStorageManager.EntryCount
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount*
+  name: EntryCount
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_EntryCount_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.EntryCount
+  nameWithType: TransientStorageManager.EntryCount
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod
+  name: MemoryCheckPeriod
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_MemoryCheckPeriod
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod
+  nameWithType: TransientStorageManager.MemoryCheckPeriod
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod*
+  name: MemoryCheckPeriod
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_MemoryCheckPeriod_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.MemoryCheckPeriod
+  nameWithType: TransientStorageManager.MemoryCheckPeriod
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent
+  name: ProcessCheckEvent()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_ProcessCheckEvent
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent()
+  nameWithType: TransientStorageManager.ProcessCheckEvent()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent*
+  name: ProcessCheckEvent
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_ProcessCheckEvent_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.ProcessCheckEvent
+  nameWithType: TransientStorageManager.ProcessCheckEvent
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod
+  name: TimeoutCheckPeriod
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_TimeoutCheckPeriod
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod
+  nameWithType: TransientStorageManager.TimeoutCheckPeriod
+- uid: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod*
+  name: TimeoutCheckPeriod
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStorageManager.html#KdSoft_Services_StorageServices_Transient_TransientStorageManager_TimeoutCheckPeriod_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStorageManager.TimeoutCheckPeriod
+  nameWithType: TransientStorageManager.TimeoutCheckPeriod
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore
+  name: TransientStore
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.TransientStore
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore
+  nameWithType: TransientStore
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.#ctor(KdSoft.Services.StorageServices.Transient.TransientStorageManager,System.String,KdSoft.Services.StorageServices.PropDesc[],System.Int32,System.Int32)
+  name: TransientStore(TransientStorageManager, String, PropDesc[], Int32, Int32)
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore__ctor_KdSoft_Services_StorageServices_Transient_TransientStorageManager_System_String_KdSoft_Services_StorageServices_PropDesc___System_Int32_System_Int32_
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.#ctor(KdSoft.Services.StorageServices.Transient.TransientStorageManager,System.String,KdSoft.Services.StorageServices.PropDesc[],System.Int32,System.Int32)
+  name.vb: TransientStore(TransientStorageManager, String, PropDesc(), Int32, Int32)
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.TransientStore(KdSoft.Services.StorageServices.Transient.TransientStorageManager, System.String, KdSoft.Services.StorageServices.PropDesc[], System.Int32, System.Int32)
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.TransientStore(KdSoft.Services.StorageServices.Transient.TransientStorageManager, System.String, KdSoft.Services.StorageServices.PropDesc(), System.Int32, System.Int32)
+  nameWithType: TransientStore.TransientStore(TransientStorageManager, String, PropDesc[], Int32, Int32)
+  nameWithType.vb: TransientStore.TransientStore(TransientStorageManager, String, PropDesc(), Int32, Int32)
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.#ctor*
+  name: TransientStore
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore__ctor_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.#ctor
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.TransientStore
+  nameWithType: TransientStore.TransientStore
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore
+  name: ClearStore()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_ClearStore
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore()
+  nameWithType: TransientStore.ClearStore()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore*
+  name: ClearStore
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_ClearStore_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.ClearStore
+  nameWithType: TransientStore.ClearStore
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Close
+  name: Close()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Close
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.Close
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Close()
+  nameWithType: TransientStore.Close()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Close*
+  name: Close
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Close_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.Close
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Close
+  nameWithType: TransientStore.Close
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Create(System.Byte[])
+  name: Create(Byte[])
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Create_System_Byte___
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.Create(System.Byte[])
+  name.vb: Create(Byte())
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Create(System.Byte[])
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.Create(System.Byte())
+  nameWithType: TransientStore.Create(Byte[])
+  nameWithType.vb: TransientStore.Create(Byte())
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Create*
+  name: Create
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Create_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.Create
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Create
+  nameWithType: TransientStore.Create
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name: DeleteAsync(Byte[], Int32, Boolean, TaskCreationOptions)
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name.vb: DeleteAsync(Byte(), Int32, Boolean, TaskCreationOptions)
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync(System.Byte[], System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync(System.Byte(), System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  nameWithType: TransientStore.DeleteAsync(Byte[], Int32, Boolean, TaskCreationOptions)
+  nameWithType.vb: TransientStore.DeleteAsync(Byte(), Int32, Boolean, TaskCreationOptions)
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync*
+  name: DeleteAsync
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteAsync_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteAsync
+  nameWithType: TransientStore.DeleteAsync
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult
+  name: TransientStore.DeleteResult
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult
+  nameWithType: TransientStore.DeleteResult
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted
+  name: Deleted
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteResult_Deleted
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted
+  nameWithType: TransientStore.DeleteResult.Deleted
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted*
+  name: Deleted
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteResult_Deleted_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Deleted
+  nameWithType: TransientStore.DeleteResult.Deleted
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteResult_Status
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status
+  nameWithType: TransientStore.DeleteResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status*
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_DeleteResult_Status_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.DeleteResult.Status
+  nameWithType: TransientStore.DeleteResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Exists(System.Byte[])
+  name: Exists(Byte[])
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Exists_System_Byte___
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.Exists(System.Byte[])
+  name.vb: Exists(Byte())
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Exists(System.Byte[])
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.Exists(System.Byte())
+  nameWithType: TransientStore.Exists(Byte[])
+  nameWithType.vb: TransientStore.Exists(Byte())
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.Exists*
+  name: Exists
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_Exists_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.Exists
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.Exists
+  nameWithType: TransientStore.Exists
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropRequest},System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name: GetAsync(Byte[], ArraySegment<PropRequest>, Int32, Boolean, TaskCreationOptions)
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropRequest__System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropRequest},System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name.vb: GetAsync(Byte(), ArraySegment(Of PropRequest), Int32, Boolean, TaskCreationOptions)
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync(System.Byte[], System.ArraySegment<KdSoft.Services.StorageServices.Transient.PropRequest>, System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync(System.Byte(), System.ArraySegment(Of KdSoft.Services.StorageServices.Transient.PropRequest), System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  nameWithType: TransientStore.GetAsync(Byte[], ArraySegment<PropRequest>, Int32, Boolean, TaskCreationOptions)
+  nameWithType.vb: TransientStore.GetAsync(Byte(), ArraySegment(Of PropRequest), Int32, Boolean, TaskCreationOptions)
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync*
+  name: GetAsync
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetAsync_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetAsync
+  nameWithType: TransientStore.GetAsync
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult
+  name: TransientStore.GetResult
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.TransientStore.GetResult
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult
+  nameWithType: TransientStore.GetResult
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetResult_Status
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status
+  nameWithType: TransientStore.GetResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status*
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetResult_Status_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Status
+  nameWithType: TransientStore.GetResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values
+  name: Values
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetResult_Values
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values
+  nameWithType: TransientStore.GetResult.Values
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values*
+  name: Values
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_GetResult_Values_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.GetResult.Values
+  nameWithType: TransientStore.GetResult.Values
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut
+  name: LockTimeOut
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_LockTimeOut
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut
+  nameWithType: TransientStore.LockTimeOut
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut*
+  name: LockTimeOut
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_LockTimeOut_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.LockTimeOut
+  nameWithType: TransientStore.LockTimeOut
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropEntry},System.Threading.Tasks.TaskCreationOptions)
+  name: PutAsync(Byte[], ArraySegment<PropEntry>, TaskCreationOptions)
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_PutAsync_System_Byte___System_ArraySegment_KdSoft_Services_StorageServices_Transient_PropEntry__System_Threading_Tasks_TaskCreationOptions_
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync(System.Byte[],System.ArraySegment{KdSoft.Services.StorageServices.Transient.PropEntry},System.Threading.Tasks.TaskCreationOptions)
+  name.vb: PutAsync(Byte(), ArraySegment(Of PropEntry), TaskCreationOptions)
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync(System.Byte[], System.ArraySegment<KdSoft.Services.StorageServices.Transient.PropEntry>, System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync(System.Byte(), System.ArraySegment(Of KdSoft.Services.StorageServices.Transient.PropEntry), System.Threading.Tasks.TaskCreationOptions)
+  nameWithType: TransientStore.PutAsync(Byte[], ArraySegment<PropEntry>, TaskCreationOptions)
+  nameWithType.vb: TransientStore.PutAsync(Byte(), ArraySegment(Of PropEntry), TaskCreationOptions)
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync*
+  name: PutAsync
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_PutAsync_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.PutAsync
+  nameWithType: TransientStore.PutAsync
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name: RemoveAsync(Byte[], Int32, Boolean, TaskCreationOptions)
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveAsync_System_Byte___System_Int32_System_Boolean_System_Threading_Tasks_TaskCreationOptions_
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync(System.Byte[],System.Int32,System.Boolean,System.Threading.Tasks.TaskCreationOptions)
+  name.vb: RemoveAsync(Byte(), Int32, Boolean, TaskCreationOptions)
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync(System.Byte[], System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  fullName.vb: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync(System.Byte(), System.Int32, System.Boolean, System.Threading.Tasks.TaskCreationOptions)
+  nameWithType: TransientStore.RemoveAsync(Byte[], Int32, Boolean, TaskCreationOptions)
+  nameWithType.vb: TransientStore.RemoveAsync(Byte(), Int32, Boolean, TaskCreationOptions)
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync*
+  name: RemoveAsync
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveAsync_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveAsync
+  nameWithType: TransientStore.RemoveAsync
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult
+  name: TransientStore.RemoveResult
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html
+  commentId: T:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult
+  nameWithType: TransientStore.RemoveResult
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveResult_Status
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status
+  nameWithType: TransientStore.RemoveResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status*
+  name: Status
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveResult_Status_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Status
+  nameWithType: TransientStore.RemoveResult.Status
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values
+  name: Values
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveResult_Values
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values
+  nameWithType: TransientStore.RemoveResult.Values
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values*
+  name: Values
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveResult_Values_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveResult.Values
+  nameWithType: TransientStore.RemoveResult.Values
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore
+  name: RemoveStore()
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveStore
+  commentId: M:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore()
+  nameWithType: TransientStore.RemoveStore()
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore*
+  name: RemoveStore
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_RemoveStore_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.RemoveStore
+  nameWithType: TransientStore.RemoveStore
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut
+  name: TimeOut
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_TimeOut
+  commentId: P:KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut
+  nameWithType: TransientStore.TimeOut
+- uid: KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut*
+  name: TimeOut
+  href: api/KdSoft.Services.StorageServices.Transient.TransientStore.html#KdSoft_Services_StorageServices_Transient_TransientStore_TimeOut_
+  commentId: Overload:KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut
+  fullName: KdSoft.Services.StorageServices.Transient.TransientStore.TimeOut
+  nameWithType: TransientStore.TimeOut
+- uid: KdSoft.Services.StorageServices.Util
+  name: Util
+  href: api/KdSoft.Services.StorageServices.Util.html
+  commentId: T:KdSoft.Services.StorageServices.Util
+  fullName: KdSoft.Services.StorageServices.Util
+  nameWithType: Util
+- uid: KdSoft.Services.StorageServices.Util.FNVHash(System.Byte[])
+  name: FNVHash(Byte[])
+  href: api/KdSoft.Services.StorageServices.Util.html#KdSoft_Services_StorageServices_Util_FNVHash_System_Byte___
+  commentId: M:KdSoft.Services.StorageServices.Util.FNVHash(System.Byte[])
+  name.vb: FNVHash(Byte())
+  fullName: KdSoft.Services.StorageServices.Util.FNVHash(System.Byte[])
+  fullName.vb: KdSoft.Services.StorageServices.Util.FNVHash(System.Byte())
+  nameWithType: Util.FNVHash(Byte[])
+  nameWithType.vb: Util.FNVHash(Byte())
+- uid: KdSoft.Services.StorageServices.Util.FNVHash*
+  name: FNVHash
+  href: api/KdSoft.Services.StorageServices.Util.html#KdSoft_Services_StorageServices_Util_FNVHash_
+  commentId: Overload:KdSoft.Services.StorageServices.Util.FNVHash
+  fullName: KdSoft.Services.StorageServices.Util.FNVHash
+  nameWithType: Util.FNVHash
